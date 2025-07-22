@@ -1,5 +1,9 @@
-import { Card, CardContent } from "@/components/ui/card";
-
+const Card = ({ children }) => (
+  <div className="rounded-2xl overflow-hidden shadow-md bg-white">{children}</div>
+);
+const CardContent = ({ children }) => (
+  <div className="p-4">{children}</div>
+);
 const projects = [
   {
     title: "Interior 01",
